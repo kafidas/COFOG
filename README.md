@@ -27,7 +27,7 @@ A comprehensive implementation of the UN's Classification of the Functions of Go
 ## Data Source
 Original classification sourced from:
 [Classification of the Functions of Government (COFOG)](https://unstats.un.org/unsd/publication/seriesm/seriesm_84e.pdf)  
-United Nations Statistics Division (2000)
+*United Nations Statistics Division (2000)*
 
 ## License Structure
 | Component | License |
