@@ -1,1 +1,2 @@
-
+COFOG.pdf
+cofog_structure.json
