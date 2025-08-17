@@ -1,0 +1,1129 @@
+{
+  "metadata": {
+    "title": "COFOG Classification Dataset",
+    "version": "1.0.1",
+    "language": "en",
+    "country_adaptation": "Generic international version",
+    "conformance_level": "Full UN COFOG 1999 standard",
+    "description": "Complete Classification of the Functions of Government (COFOG) taxonomy according to UN standards",
+    "source": {
+      "organization": "United Nations Statistics Division",
+      "publication": "Classification of the Functions of Government (COFOG)",
+      "year": 2000,
+      "url": "https://unstats.un.org/unsd/publication/seriesm/seriesm_84e.pdf"
+    },
+    "editor": {
+      "author": "Lampros Kafidas",
+      "year": 2025,
+      "contact": "https://www.linkedin.com/in/kafidas/",
+      "changes": [
+        "Structured JSON format",
+        "Enhanced documentation"
+      ]
+    },
+    "status": "stable",
+    "update_frequency": "as needed",
+    "quality_notes": "Verified against UN source document",
+    "created": "2025-03-15",
+    "last_updated": "2025-08"
+  },
+  "license": {
+    "original_content": {
+      "copyright": "United Nations",
+      "terms": "Used under UN copyright terms"
+    },
+    "modifications": {
+      "license": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "usage": {
+      "attribution": "Must credit both United Nations (original) and Lampros Kafidas (editor)",
+      "notice": "The UN does not endorse any modifications made to the original classification"
+    }
+  },
+  "documentation": {
+    "structure": {
+      "divisions": "Top-level government functions (10 categories)",
+      "groups": "Second-level breakdown within divisions",
+      "classes": "Most detailed functional classification",
+      "types": {
+        "CS": "Collective Services",
+        "IS": "Individual Services"
+      },
+      "code_patterns": {
+        "division": "XX (01-10)",
+        "group": "XX.X",
+        "class": "XX.X.X"
+      }
+    },
+    "notes": [
+      "n.e.c. = not elsewhere classified",
+      "R&D = Research and Development",
+      "Classification follows UN COFOG 1999 standard"
+    ]
+  },
+  "COFOG 1999 - DIVISIONS": [
+    {
+      "code": "01",
+      "name": "GENERAL PUBLIC SERVICES",
+      "description": "",
+      "groups": [
+        {
+          "code": "01.1",
+          "name": "Executive and legislative organs, financial and fiscal affairs, external affairs",
+          "classes": [
+            {
+              "code": "01.1.1",
+              "name": "Executive and legislative organs",
+              "type": "CS"
+            },
+            {
+              "code": "01.1.2",
+              "name": "Financial and fiscal affairs",
+              "type": "CS"
+            },
+            {
+              "code": "01.1.3",
+              "name": "External affairs",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.2",
+          "name": "Foreign economic aid",
+          "classes": [
+            {
+              "code": "01.2.1",
+              "name": "Economic aid to developing countries and countries in transition",
+              "type": "CS"
+            },
+            {
+              "code": "01.2.2",
+              "name": "Economic aid routed through international organizations",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.3",
+          "name": "General services",
+          "note": "This group covers services that are not connected with a specific function and which are usually undertaken by central offices at the various levels of government. It also covers those services connected with a particular function that are undertaken by such central offices. For example, the compilation of industry, environment, health or education statistics by a central statistical agency is included here.",
+          "classes": [
+            {
+              "code": "01.3.1",
+              "name": "General personnel services",
+              "type": "CS"
+            },
+            {
+              "code": "01.3.2",
+              "name": "Overall planning and statistical services",
+              "type": "CS"
+            },
+            {
+              "code": "01.3.3",
+              "name": "Other general services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.4",
+          "name": "Basic research",
+          "note": "Basic research is experimental or theoretical work undertaken primarily to acquire new knowledge of the underlying foundations of phenomena and observable facts, without any particular application or use in view.",
+          "classes": [
+            {
+              "code": "01.4.0",
+              "name": "Basic research",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.5",
+          "name": "R&D General public services",
+          "note": "Applied research is original investigation undertaken in order to acquire new knowledge, but directed primarily towards a specific practical aim or objective.Experimental development is systematic work, drawing on existing knowledge gained from research and practical experience, that is directed to producing new materials, products and devices; to installing new processes, systems and services; or to improving substantially those already produced or installed.",
+          "classes": [
+            {
+              "code": "01.5.0",
+              "name": "R&D General public services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.6",
+          "name": "General public services n.e.c.",
+          "classes": [
+            {
+              "code": "01.6.0",
+              "name": "General public services n.e.c.",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.7",
+          "name": "Public debt transactions",
+          "classes": [
+            {
+              "code": "01.7.0",
+              "name": "Public debt transactions",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "01.8",
+          "name": "Transfers of a general character between different levels of government",
+          "classes": [
+            {
+              "code": "01.8.0",
+              "name": "Transfers of a general character between different levels of government",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "name": "DEFENCE",
+      "description": "",
+      "groups": [
+        {
+          "code": "02.1",
+          "name": "Military defence",
+          "classes": [
+            {
+              "code": "02.1.0",
+              "name": "Military defence",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "02.2",
+          "name": "Civil defence",
+          "classes": [
+            {
+              "code": "02.2.0",
+              "name": "Civil defence",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "02.3",
+          "name": "Foreign military aid",
+          "classes": [
+            {
+              "code": "02.3.0",
+              "name": "Foreign military aid",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "02.4",
+          "name": "R&D Defence",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "02.4.0",
+              "name": "R&D Defence",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "02.5",
+          "name": "Defence n.e.c.",
+          "classes": [
+            {
+              "code": "02.5.0",
+              "name": "Defence n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "name": "PUBLIC ORDER AND SAFETY",
+      "description": "",
+      "groups": [
+        {
+          "code": "03.1",
+          "name": "Police services",
+          "classes": [
+            {
+              "code": "03.1.0",
+              "name": "Police services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "03.2",
+          "name": "Fire-protection services",
+          "classes": [
+            {
+              "code": "03.2.0",
+              "name": "Fire-protection services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "03.3",
+          "name": "Law courts",
+          "classes": [
+            {
+              "code": "03.3.0",
+              "name": "Law courts",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "03.4",
+          "name": "Prisons",
+          "classes": [
+            {
+              "code": "03.4.0",
+              "name": "Prisons",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "03.5",
+          "name": "R&D Public order and safety",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "03.5.0",
+              "name": "R&D Public order and safety",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "03.6",
+          "name": "Public order and safety n.e.c.",
+          "classes": [
+            {
+              "code": "03.6.0",
+              "name": "Public order and safety n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "04",
+      "name": "ECONOMIC AFFAIRS",
+      "description": "",
+      "groups": [
+        {
+          "code": "04.1",
+          "name": "General economic, commercial and labour affairs",
+          "classes": [
+            {
+              "code": "04.1.1",
+              "name": "General economic and commercial affairs",
+              "type": "CS"
+            },
+            {
+              "code": "04.1.2",
+              "name": "General labour affairs",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.2",
+          "name": "Agriculture, forestry, fishing and hunting",
+          "classes": [
+            {
+              "code": "04.2.1",
+              "name": "Agriculture",
+              "type": "CS"
+            },
+            {
+              "code": "04.2.2",
+              "name": "Forestry",
+              "type": "CS"
+            },
+            {
+              "code": "04.2.3",
+              "name": "Fishing and hunting",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.3",
+          "name": "Fuel and energy",
+          "classes": [
+            {
+              "code": "04.3.1",
+              "name": "Coal and other solid mineral fuels",
+              "type": "CS"
+            },
+            {
+              "code": "04.3.2",
+              "name": "Petroleum and natural gas",
+              "type": "CS"
+            },
+            {
+              "code": "04.3.3",
+              "name": "Nuclear fuel",
+              "type": "CS"
+            },
+            {
+              "code": "04.3.4",
+              "name": "Other fuels",
+              "type": "CS"
+            },
+            {
+              "code": "04.3.5",
+              "name": "Electricity",
+              "type": "CS"
+            },
+            {
+              "code": "04.3.6",
+              "name": "Non-electric energy",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.4",
+          "name": "Mining, manufacturing and construction",
+          "classes": [
+            {
+              "code": "04.4.1",
+              "name": "Mining of mineral resources other than mineral fuels",
+              "type": "CS"
+            },
+            {
+              "code": "04.4.2",
+              "name": "Manufacturing",
+              "type": "CS"
+            },
+            {
+              "code": "04.4.3",
+              "name": "Construction",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.5",
+          "name": "Transport",
+          "classes": [
+            {
+              "code": "04.5.1",
+              "name": "Road transport",
+              "type": "CS"
+            },
+            {
+              "code": "04.5.2",
+              "name": "Water transport",
+              "type": "CS"
+            },
+            {
+              "code": "04.5.3",
+              "name": "Railway transport",
+              "type": "CS"
+            },
+            {
+              "code": "04.5.4",
+              "name": "Air transport",
+              "type": "CS"
+            },
+            {
+              "code": "04.5.5",
+              "name": "Pipeline and other transport",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.6",
+          "name": "Communication",
+          "classes": [
+            {
+              "code": "04.6.0",
+              "name": "Communication",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.7",
+          "name": "Other industries",
+          "classes": [
+            {
+              "code": "04.7.1",
+              "name": "Distributive trades, storage and warehousing",
+              "type": "CS"
+            },
+            {
+              "code": "04.7.2",
+              "name": "Hotels and restaurants",
+              "type": "CS"
+            },
+            {
+              "code": "04.7.3",
+              "name": "Tourism",
+              "type": "CS"
+            },
+            {
+              "code": "04.7.4",
+              "name": "Multi-purpose development projects",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.8",
+          "name": "R&D Economic affairs",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "04.8.1",
+              "name": "R&D General economic, commercial and labour affairs",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.2",
+              "name": "R&D Agriculture, forestry, fishing and hunting",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.3",
+              "name": "R&D Fuel and energy",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.4",
+              "name": "R&D Mining, manufacturing and construction",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.5",
+              "name": "R&D Transport",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.6",
+              "name": "R&D Communication",
+              "type": "CS"
+            },
+            {
+              "code": "04.8.7",
+              "name": "R&D Other industries",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "04.9",
+          "name": "Economic affairs n.e.c.",
+          "classes": [
+            {
+              "code": "04.9.0",
+              "name": "Economic affairs n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "name": "ENVIRONMENTAL PROTECTION",
+      "description": "The breakdown of environmental protection is based upon the Classification of Environmental Protection Activities (CEPA) as elaborated in the European System for the Collection of Economic Information on the Environment (SERIEE) of the Statistical Office of the European Communities (Eurostat).",
+      "groups": [
+        {
+          "code": "05.1",
+          "name": "Waste management",
+          "note": "This group covers collection, treatment and disposal of waste.Waste collection includes sweeping of streets, squares, paths, markets, public gardens, parks, etc.; collection of all types of waste, whether selective by type of product or undifferentiated covering all waste, and their transport to place of treatment or discharge.Waste treatment includes any method or process designed to change the physical, chemical or biological character or composition of any waste so as to neutralize it, to render it non-hazardous, to make it safer for transport, to make it amenable for recovery or storage or to reduce it in volume.Waste disposal includes final placement of waste for which no further use is foreseen by landfill, containment, underground disposal, dumping at sea or any other relevant disposal method.",
+          "classes": [
+            {
+              "code": "05.1.0",
+              "name": "Waste management",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "05.2",
+          "name": "Waste water management",
+          "note": "This group covers sewage system operation and waste water treatment.Sewage system operation includes management and construction of the system of collectors, pipelines, conduits and pumps to evacuate any waste water (rainwater, domestic and other available waste water) from the points of generation to either a sewage treatment plant or to a point where waste water is discharged to surface water.Waste water treatment includes any mechanical, biological or advanced process to render waste water fit to meet applicable environment standards or other quality norms.",
+          "classes": [
+            {
+              "code": "05.2.0",
+              "name": "Waste water management",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "05.3",
+          "name": "Pollution abatement",
+          "note": "This group covers activities relating to ambient air and climate protection, soil and groundwater protection, noise and vibration abatement and protection against radiation.These activities include construction, maintenance and operation of monitoring systems and stations (other than weather stations); construction of noise embankments, hedges and other anti-noise facilities including the resurfacing of sections of urban highways or railways with noise reducing surfaces; measures to clean pollution in water bodies; measures to control or prevent the emissions of greenhouse gases and pollutants that adversely affect the quality of the air; construction, maintenance and operation of installations for the decontamination of polluted soils and for the storage of pollutant products; transportation of pollutant products.",
+          "classes": [
+            {
+              "code": "05.3.0",
+              "name": "Pollution abatement",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "05.4",
+          "name": "Protection of biodiversity and landscape",
+          "note": "This group covers activities relating to the protection of fauna and flora species (including the reintroduction of extinct species and the recovery of species menaced by extinction), the protection of habitats (including the management of natural parks and reserves) and the protection of landscapes for their aesthetic values (including the reshaping of damaged landscapes for the purpose of strengthening their aesthetic value and the rehabilitation of abandoned mines and quarry sites).",
+          "classes": [
+            {
+              "code": "05.4.0",
+              "name": "Protection of biodiversity and landscape",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "05.5",
+          "name": "R&D Environmental protection",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "05.5.0",
+              "name": "R&D Environmental protection",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "05.6",
+          "name": "Environmental protection n.e.c.",
+          "classes": [
+            {
+              "code": "05.6.0",
+              "name": "Environmental protection n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "name": "HOUSING AND COMMUNITY AMENITIES",
+      "description": "",
+      "groups": [
+        {
+          "code": "06.1",
+          "name": "Housing development",
+          "classes": [
+            {
+              "code": "06.1.0",
+              "name": "Housing development",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "06.2",
+          "name": "Community development",
+          "classes": [
+            {
+              "code": "06.2.0",
+              "name": "Community development",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "06.3",
+          "name": "Water supply",
+          "classes": [
+            {
+              "code": "06.3.0",
+              "name": "Water supply",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "06.4",
+          "name": "Street lighting",
+          "classes": [
+            {
+              "code": "06.4.0",
+              "name": "Street lighting",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "06.5",
+          "name": "R&D Housing and community amenities",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "06.5.0",
+              "name": "R&D Housing and community amenities",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "06.6",
+          "name": "Housing and community amenities n.e.c.",
+          "classes": [
+            {
+              "code": "06.6.0",
+              "name": "Housing and community amenities n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "HEALTH",
+      "description": "Government outlays on health include expenditures on services provided to individual persons and services provided on a collective basis. Expenditures on individual services are allocated to groups (07.1) through (07.4); expenditures on collective services are assigned to groups (07.5) and (07.6).Collective health services are concerned with matters such as formulation and administration of government policy; setting and enforcement of standards for medical and paramedical personnel and for hospitals, clinics, surgeries, etc.; regulation and licensing of providers of health services; and applied research and experimental development into medical and health-related matters. However, overhead expenses connected with administration or functioning of a group of hospitals, clinics, surgeries, etc. are considered to be individual expenditures and are classified to groups (07.1) through (07.4) as appropriate.",
+      "groups": [
+        {
+          "code": "07.1",
+          "name": "Medical products, appliances and equipment",
+          "note": "This group covers medicaments, prostheses, medical appliances and equipment and other healthrelated products obtained by individuals or households, either with or without a prescription, usually from dispensing chemists, pharmacists or medical equipment suppliers. They are intended for consumption or use outside a health facility or institution. Such products supplied directly to outpatients by medical, dental and paramedical practitioners or to in-patients by hospitals and the like are included in outpatient services (07.2) or hospital services (07.3).",
+          "classes": [
+            {
+              "code": "07.1.1",
+              "name": "Pharmaceutical products",
+              "type": "IS"
+            },
+            {
+              "code": "07.1.2",
+              "name": "Other medical products",
+              "type": "IS"
+            },
+            {
+              "code": "07.1.3",
+              "name": "Therapeutic appliances and equipment",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "07.2",
+          "name": "Outpatient services",
+          "note": "This group covers medical, dental and paramedical services delivered to outpatients by medical, dental and paramedical practitioners and auxiliaries. The services may be delivered at home, in individual or group consulting facilities, dispensaries or the outpatient clinics of hospitals and the like.Outpatient services include the medicaments, prostheses, medical appliances and equipment and other health-related products supplied directly to outpatients by medical, dental and paramedical practitioners and auxiliaries.Medical, dental and paramedical services provided to in-patients by hospitals and the like are included in hospital services (07.3).",
+          "classes": [
+            {
+              "code": "07.2.1",
+              "name": "General medical services",
+              "type": "IS"
+            },
+            {
+              "code": "07.2.2",
+              "name": "Specialized medical services",
+              "type": "IS"
+            },
+            {
+              "code": "07.2.3",
+              "name": "Dental services",
+              "type": "IS"
+            },
+            {
+              "code": "07.2.4",
+              "name": "Paramedical services",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "07.3",
+          "name": "Hospital services",
+          "note": "Hospitalization is defined as occurring when a patient is accommodated in a hospital for the duration of the treatment. Hospital day-care and home-based hospital treatment are included, as are hospices for terminally ill persons.This group covers the services of general and specialist hospitals, the services of medical centres, maternity centres, nursing homes and convalescent homes which chiefly provide in-patient services, the services of military base hospitals, the services of institutions serving old people in which medical monitoring is an essential component and the services of rehabilitation centres providing in-patient health care and rehabilitative therapy where the objective is to treat the patient rather than to provide long-term support.Hospitals are defined as institutions which offer in-patient care under direct supervision of qualified medical doctors. Medical centres, maternity centres, nursing homes and convalescent homes also provide in-patient care but their services are supervised and frequently delivered by staff of lower qualification than medical doctors.The group does not cover facilities such as military field hospitals (02.1), surgeries, clinics and dispensaries devoted exclusively to outpatient care (07.2), institutions for disabled persons and rehabilitation centres providing primarily long-term support (10.1.2), retirement homes for elderly persons (10.2.0). Neither does it cover payments to patients for loss of income due to hospitalization (10.1.1).Hospital services include medicaments, prostheses, medical appliances and equipment and other health- related products supplied to hospital patients. It also includes non-medical expenditure of hospitals on administration, non-medical staff, food and drink, accommodation (including staff accommodation), etc.",
+          "classes": [
+            {
+              "code": "07.3.1",
+              "name": "General hospital services",
+              "type": "IS"
+            },
+            {
+              "code": "07.3.2",
+              "name": "Specialized hospital services",
+              "type": "IS"
+            },
+            {
+              "code": "07.3.3",
+              "name": "Medical and maternity centre services",
+              "type": "IS"
+            },
+            {
+              "code": "07.3.4",
+              "name": "Nursing and convalescent home services",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "07.4",
+          "name": "Public health services",
+          "classes": [
+            {
+              "code": "07.4.0",
+              "name": "Public health services",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "07.5",
+          "name": "R&D Health",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "07.5.0",
+              "name": "R&D Health",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "07.6",
+          "name": "Health n.e.c.",
+          "classes": [
+            {
+              "code": "07.6.0",
+              "name": "Health n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "name": "RECREATION, CULTURE AND RELIGION",
+      "description": "Government outlays on recreation, culture and religion include expenditures on services provided toindividual persons and households and expenditures on services provided on a collective basis. Individual expenditures are allocated to groups (08.1) and (08.2); expenditures on collective services are assigned to groups (08.3) to (08.6).Collective services are provided to the community as a whole. They include activities such as formulation and administration of government policy; formulation and enforcement of legislation and standards for providing recreational and cultural services; and applied research and experimental development into recreational, cultural and religious affairs and services.",
+      "groups": [
+        {
+          "code": "08.1",
+          "name": "Recreational and sporting services",
+          "classes": [
+            {
+              "code": "08.1.0",
+              "name": "Recreational and sporting services",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "08.2",
+          "name": "Cultural services",
+          "classes": [
+            {
+              "code": "08.2.0",
+              "name": "Cultural services",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "08.3",
+          "name": "Broadcasting and publishing services",
+          "classes": [
+            {
+              "code": "08.3.0",
+              "name": "Broadcasting and publishing services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "08.4",
+          "name": "Religious and other community services",
+          "classes": [
+            {
+              "code": "08.4.0",
+              "name": "Religious and other community services",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "08.5",
+          "name": "R&D Recreation, culture and religion",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "08.5.0",
+              "name": "R&D Recreation, culture and religion",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "08.6",
+          "name": "Recreation, culture and religion n.e.c.",
+          "classes": [
+            {
+              "code": "08.6.0",
+              "name": "Recreation, culture and religion n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "name": "EDUCATION",
+      "description": "Government outlays on education include expenditures on services provided to individual pupils and students and expenditures on services provided on a collective basis. Expenditures on individual services are allocated to groups (09.1) through (09.6); expenditures on collective services are assigned to groups (09.7) and (09.8). Collective educational services are concerned with matters such as formulation and administration of government policy; setting and enforcement of standards; regulation, licensing and supervision of educational establishments; and applied research and experimental development into education affairs and services. However, overhead expenses connected with administration or functioning of a group of schools, colleges, etc. are considered to be individual expenditures and are classified to groups (09.1) through (09.6) as appropriate.The breakdown of education is based upon the level categories of the 1997 International Standard Classification of Education (ISCED-97) of the United Nations Educational, Scientific and Cultural Organization (UNESCO).This division includes military schools and colleges where curricula resemble those of civilian institutions, police colleges offering general education in addition to police training and the provision of education by radio or television broadcasting. Expenditures so incurred are classified to groups (09.1) to (09.5) as appropriate.",
+      "groups": [
+        {
+          "code": "09.1",
+          "name": "Pre-primary and primary education",
+          "classes": [
+            {
+              "code": "09.1.1",
+              "name": "Pre-primary education",
+              "type": "IS"
+            },
+            {
+              "code": "09.1.2",
+              "name": "Primary education",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.2",
+          "name": "Secondary education",
+          "classes": [
+            {
+              "code": "09.2.1",
+              "name": "Lower-secondary education",
+              "type": "IS"
+            },
+            {
+              "code": "09.2.2",
+              "name": "Upper-secondary education",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.3",
+          "name": "Post-secondary non-tertiary education",
+          "classes": [
+            {
+              "code": "09.3.0",
+              "name": "Post-secondary non-tertiary education",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.4",
+          "name": "Tertiary education",
+          "classes": [
+            {
+              "code": "09.4.1",
+              "name": "First stage of tertiary education",
+              "type": "IS"
+            },
+            {
+              "code": "09.4.2",
+              "name": "Second stage of tertiary education",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.5",
+          "name": "Education not definable by level",
+          "classes": [
+            {
+              "code": "09.5.0",
+              "name": "Education not definable by level",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.6",
+          "name": "Subsidiary services to education",
+          "classes": [
+            {
+              "code": "09.6.0",
+              "name": "Subsidiary services to education",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "09.7",
+          "name": "R&D Education",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "09.7.0",
+              "name": "R&D Education",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "09.8",
+          "name": "Education n.e.c.",
+          "classes": [
+            {
+              "code": "09.8.0",
+              "name": "Education n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "SOCIAL PROTECTION",
+      "description": "Government outlays on social protection include expenditures on services and transfers provided toindividual persons and households and expenditures on services provided on a collective basis. Expenditures on individual services and transfers are allocated to groups (10.1) through (10.7); expenditures on collective services are assigned to groups (10.8) and (10.9).Collective social protection services are concerned with matters such as formulation and administration of government policy; formulation and enforcement of legislation and standards for providing social protection; and applied research and experimental development into social protection affairs and services.The social protection functions and their definitions are based on the 1996 European System of integrated Social Protection Statistics (ESSPROS) of the Statistical Office of the European Communities (Eurostat).In ESSPROS, social protection includes health care, but this division does not include health care. Health care is covered by Division 07. Hence, medical goods and services provided to persons who receive the cash benefits and benefits in kind specified in groups (10.1) through (10.7) are classified under (07.1), (07.2) or (07.3) as appropriate.",
+      "groups": [
+        {
+          "code": "10.1",
+          "name": "Sickness and disability",
+          "classes": [
+            {
+              "code": "10.1.1",
+              "name": "Sickness",
+              "type": "IS"
+            },
+            {
+              "code": "10.1.2",
+              "name": "Disability",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.2",
+          "name": "Old age",
+          "classes": [
+            {
+              "code": "10.2.0",
+              "name": "Old age",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.3",
+          "name": "Survivors",
+          "classes": [
+            {
+              "code": "10.3.0",
+              "name": "Survivors",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.4",
+          "name": "Family and children",
+          "classes": [
+            {
+              "code": "10.4.0",
+              "name": "Family and children",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.5",
+          "name": "Unemployment",
+          "classes": [
+            {
+              "code": "10.5.0",
+              "name": "Unemployment",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.6",
+          "name": "Housing",
+          "classes": [
+            {
+              "code": "10.6.0",
+              "name": "Housing",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.7",
+          "name": "Social exclusion n.e.c.",
+          "classes": [
+            {
+              "code": "10.7.0",
+              "name": "Social exclusion n.e.c.",
+              "type": "IS"
+            }
+          ]
+        },
+        {
+          "code": "10.8",
+          "name": "R&D Social protection",
+          "note": "Definitions of basic research, applied research and experimental development are given under (01.4) and (01.5).",
+          "classes": [
+            {
+              "code": "10.8.0",
+              "name": "R&D Social protection",
+              "type": "CS"
+            }
+          ]
+        },
+        {
+          "code": "10.9",
+          "name": "Social protection n.e.c.",
+          "classes": [
+            {
+              "code": "10.9.0",
+              "name": "Social protection n.e.c.",
+              "type": "CS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "division_codes": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    "type_codes": ["CS", "IS"],
+    "rules": [
+      "Division codes must be between 01-10",
+      "Divisions must have between 5-9 groups",
+      "Groups must have at least 1 class",
+      "Group codes must start with valid division code",
+      "Class codes must start with valid group code",
+      "Class codes must follow XX.X.X pattern",
+      "Type codes must be either CS (Collective Services) or IS (Individual Services)",
+      "n.e.c. classes should be last in their group"
+    ]
+  }
+}
